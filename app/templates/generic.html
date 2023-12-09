@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html><head><title>Prediction</title><meta charset="utf-8"><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}">
+</head><body>
+
+<!-- Header -->
+<header id="header" class="alt"><div class="logo"><a href="index.html">CROPEYE<span> For Precision Farming</span></a></div>
+    <a href="#menu">Menu</a>
+</header><!-- Nav --><nav id="menu"><ul class="links"><li><a href="index.html">Home</a></li>
+        <li><a href="generic.html">Prediction</a></li>
+    </ul></nav><!-- Banner --><section id="banner"><div class="inner">
+        <header><h1>CropEye</h1>
+            <p>Upload Your Image For prediction</p>
+            <form class="p-3 text-center" action='/generic.html' method="post" enctype="multipart/form-data">
+                <input class="form-control" type="file" name="file">  <!-- Update the name attribute -->
+                <button class="btn btn-primary mt-3" type="submit">Predict</button>
+            </form>
+            
+    
+            {% if prediction is defined %}
+            <p>Prediction: {{ prediction }}</p>
+            <p>Confidence: {{ confidence }}%</p>
+            {% endif %}
+
+            {% if img_path is defined %}
+            <img src="{{ url_for('static', filename='uploads/' + img_path) }}" alt="Uploaded Image">
+            {% endif %}
+    </div>
+</section>
+
+<!-- Main --><div id="main">
+
+    <!-- Section -->
+    <section class="wrapper style2"><div class="inner">
+            <div class="flex flex-2">
+                <div class="col col2">
+                    <h3>How To Use Our tool?</h3>
+                    <p>1-Click The image with Your drone or Phone</p>
+                    <p>2-Upload the image on our Model </p>
+                    <p>3-Check for result</p>
+                </div>
+                <div class="col col1 first">
+                    <div class="image round fit">
+                        <a href="generic.html" class="link"><img src="filename='static/assets/images/pic02.jpg" alt="" width="320" height="320"></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section></div>
+
+<!-- Footer -->
+<footer id="footer"><div class="copyright">
+        <ul class="icons"><li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
+        </ul></div>
+</footer><div class="copyright">
+    Site made By <a>TEAM 13</a>
+</div>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script><script src="assets/js/jquery.scrolly.min.js"></script><script src="assets/js/jquery.scrollex.min.js"></script><script src="assets/js/skel.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script></body></html>
