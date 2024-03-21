@@ -1,5 +1,5 @@
 **Cropeye Model Version 2.0 for Drone Precision Farming**
-Overview
+#Overview
 This project implements a deep learning model, Cropeye Version 2.0, designed for drone precision farming. The model utilizes Convolutional Neural Networks (CNNs) to classify plant diseases, focusing primarily on potato diseases. It is trained on the Plant Village dataset available on Kaggle.
 
 **Dataset**
