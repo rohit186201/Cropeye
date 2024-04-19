@@ -38,5 +38,12 @@ The trained model can be deployed in various ways, such as:
 - Integration into drone systems for real-time disease detection.
 - Deployment as a web service using frameworks like Flask or Django.
 
+## Image Uploader
+![Image Uploader](https://github.com/rohit186201/Cropeye/blob/main/Image%20Uploader.png)
+
+## Image Prediction
+![Image Prediction](https://github.com/rohit186201/Cropeye/blob/main/Prediction.png)
+
+
 ## Credits
 - Dataset: https://www.kaggle.com/datasets/muhammadardiputra/potato-leaf-disease-dataset
